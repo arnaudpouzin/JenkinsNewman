@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "1f9b27d6-87dc-4195-8bb8-9b6c22442cb5",
+		"name": "Newman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36136629"
+	},
+	"item": [
+		{
+			"name": "recherche",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/search?q={{recherche}}&rlz=1C1GCEA_frFR1111FR1111&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQoyNzc4MGowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{recherche}}"
+						},
+						{
+							"key": "rlz",
+							"value": "1C1GCEA_frFR1111FR1111"
+						},
+						{
+							"key": "oq",
+							"value": ""
+						},
+						{
+							"key": "gs_lcrp",
+							"value": "EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQoyNzc4MGowajE1qAIIsAIB"
+						},
+						{
+							"key": "sourceid",
+							"value": "chrome"
+						},
+						{
+							"key": "ie",
+							"value": "UTF-8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
